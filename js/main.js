@@ -7,8 +7,10 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 4000,
         arrows: true,
-        prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>'
+        appendDots: $('.hero-controls'),
+        appendArrows: $('.hero-controls'),
+        prevArrow: '<button type="button" class="slick-prev-custom"><i class="fas fa-arrow-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next-custom"><i class="fas fa-arrow-right"></i></button>'
     });
 
     // Mega Menu Hover Logic

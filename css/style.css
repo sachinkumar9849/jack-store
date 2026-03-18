@@ -251,6 +251,95 @@ h6 {
     display: block;
 }
 
+/* Custom Hero Controls */
+.hero-controls {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 10;
+}
+
+.hero-controls .slick-prev-custom,
+.hero-controls .slick-next-custom {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fcebeb;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #1a202c;
+    transition: var(--transition);
+    padding: 0;
+}
+
+.hero-controls .slick-prev-custom {
+    order: 1;
+}
+
+.hero-controls .slick-dots {
+    order: 2;
+}
+
+.hero-controls .slick-next-custom {
+    order: 3;
+}
+
+.hero-controls .slick-prev-custom:hover,
+.hero-controls .slick-next-custom:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+.hero-controls .slick-prev-custom i,
+.hero-controls .slick-next-custom i {
+    font-size: 14px;
+}
+
+.hero-controls .slick-dots {
+    position: static;
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: auto;
+}
+
+.hero-controls .slick-dots li {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+.hero-controls .slick-dots li button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fcebeb;
+    padding: 0;
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+.hero-controls .slick-dots li button:before {
+    display: none;
+}
+
+.hero-controls .slick-dots li.slick-active button {
+    width: 24px;
+    border-radius: 10px;
+    background-color: #f1c40f;
+    opacity: 1;
+}
+
 /* Slick Customization */
 .slick-dots {
     bottom: 30px;
@@ -324,6 +413,10 @@ h6 {
     object-fit: cover;
 }
 
+.category-item {
+    padding: 15px 10px 30px;
+}
+
 .category-item:hover .category-img-wrapper {
     transform: translateY(-8px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -386,16 +479,18 @@ h6 {
 
 .product-img-container {
     position: relative;
-    border-radius: 20px;
+    border-radius: 0px;
     overflow: hidden;
-    padding: 10px;
+    padding: 0px;
 }
 
 .product-img-container img {
-    border-radius: 15px;
+    /* border-radius: 15px; */
     width: 100%;
     height: 250px;
     object-fit: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .discount-badge {
@@ -982,7 +1077,7 @@ h6 {
 footer {
     background: #fff;
     padding: 1rem 0 3rem;
-    border-top: 1px solid var(--border-color);
+    /* border-top: 1px solid var(--border-color); */
     padding-bottom: 0;
 }
 
@@ -1017,3 +1112,6 @@ Retrieved 2026-03-18, License - CC BY-SA 4.0
 /* the slides */
 
 /* testimonial new  */
+img {
+    cursor: pointer;
+}
