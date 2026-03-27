@@ -1,5 +1,5 @@
 <?php
-$bodyClass = 'cart-page';
+$bodyClass = 'cart-page cart-filled-page';
 include 'include/header.php';
 ?>
     <main class="cart-wrap">
@@ -9,108 +9,170 @@ include 'include/header.php';
             <p class="cart-count">3 items in your cart</p>
 
             <div class="row">
-                <section class="col-lg-8">
-                    <article class="cart-item-card">
+                <!-- Cart Items Column -->
+                <div class="col-lg-8">
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item-card">
+                        <div class="cart-item-badge">33% OFF</div>
                         <div class="cart-item-image">
-                            <span>33% OFF</span>
                             <img src="assets/images/product1.svg" alt="Native Flower Vase">
                         </div>
-                        <div class="cart-item-body">
-                            <small>Fine ceramics</small>
-                            <h3>Native Flower Vase</h3>
-                            <p class="cart-item-size"><span class="active">500ml</span><span>1L</span></p>
-                            <p class="cart-item-price">Rs. 1,990 <del>Rs. 3,000</del></p>
-                        </div>
-                        <div class="cart-item-actions">
-                            <button class="cart-delete-btn"><i class="far fa-trash-alt"></i></button>
-                            <div class="cart-qty">
-                                <button>-</button>
-                                <span>2</span>
-                                <button>+</button>
+                        <div class="cart-item-info">
+                            <div class="cart-item-header">
+                                <div>
+                                    <span class="cart-item-category">Fine ceramics</span>
+                                    <h3 class="cart-item-name">Native Flower Vase</h3>
+                                </div>
+                                <button class="cart-item-remove" title="Remove item"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                            <div class="cart-item-variants">
+                                <span class="variant-tag active">500ml</span>
+                                <span class="variant-tag">1L</span>
+                            </div>
+                            <div class="cart-item-bottom">
+                                <div class="cart-item-price">
+                                    <span class="price-current">Rs. 1,990</span>
+                                    <span class="price-original">Rs. 3,000</span>
+                                </div>
+                                <div class="cart-qty-control">
+                                    <button class="qty-btn qty-minus"><i class="fas fa-minus"></i></button>
+                                    <span class="qty-value">2</span>
+                                    <button class="qty-btn qty-plus"><i class="fas fa-plus"></i></button>
+                                </div>
                             </div>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="cart-item-card">
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item-card">
                         <div class="cart-item-image">
-                            <img src="assets/images/product6.svg" alt="Knife and Fork Set">
+                            <img src="assets/images/product2.svg" alt="Knife and Fork Set">
                         </div>
-                        <div class="cart-item-body">
-                            <small>Fine ceramics</small>
-                            <h3>Knife and Fork Set</h3>
-                            <p class="cart-item-price">Rs. 1,999</p>
-                        </div>
-                        <div class="cart-item-actions">
-                            <button class="cart-delete-btn"><i class="far fa-trash-alt"></i></button>
-                            <div class="cart-qty">
-                                <button>-</button>
-                                <span>1</span>
-                                <button>+</button>
+                        <div class="cart-item-info">
+                            <div class="cart-item-header">
+                                <div>
+                                    <span class="cart-item-category">Fine ceramics</span>
+                                    <h3 class="cart-item-name">Knife and Fork Set</h3>
+                                </div>
+                                <button class="cart-item-remove" title="Remove item"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                            <div class="cart-item-bottom">
+                                <div class="cart-item-price">
+                                    <span class="price-current">Rs. 1,999</span>
+                                </div>
+                                <div class="cart-qty-control">
+                                    <button class="qty-btn qty-minus"><i class="fas fa-minus"></i></button>
+                                    <span class="qty-value">1</span>
+                                    <button class="qty-btn qty-plus"><i class="fas fa-plus"></i></button>
+                                </div>
                             </div>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="cart-item-card">
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item-card">
+                        <div class="cart-item-badge">27% OFF</div>
                         <div class="cart-item-image">
-                            <span>27% OFF</span>
-                            <img src="assets/images/product2.svg" alt="Gorilla Wine">
+                            <img src="assets/images/product3.svg" alt="Gorilla Wine">
                         </div>
-                        <div class="cart-item-body">
-                            <small>Fine glass</small>
-                            <h3>Gorilla Wine</h3>
-                            <p class="cart-item-size"><span class="active">250ml</span><span>500ml</span><span>1L</span>
-                            </p>
-                            <p class="cart-item-price">Rs. 489 <del>Rs. 700</del></p>
-                        </div>
-                        <div class="cart-item-actions">
-                            <button class="cart-delete-btn"><i class="far fa-trash-alt"></i></button>
-                            <div class="cart-qty">
-                                <button>-</button>
-                                <span>3</span>
-                                <button>+</button>
+                        <div class="cart-item-info">
+                            <div class="cart-item-header">
+                                <div>
+                                    <span class="cart-item-category">Fine glass</span>
+                                    <h3 class="cart-item-name">Gorilla Wine</h3>
+                                </div>
+                                <button class="cart-item-remove" title="Remove item"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                            <div class="cart-item-variants">
+                                <span class="variant-tag active">250ml</span>
+                                <span class="variant-tag">500ml</span>
+                                <span class="variant-tag">1L</span>
+                            </div>
+                            <div class="cart-item-bottom">
+                                <div class="cart-item-price">
+                                    <span class="price-current">Rs. 489</span>
+                                    <span class="price-original">Rs. 700</span>
+                                </div>
+                                <div class="cart-qty-control">
+                                    <button class="qty-btn qty-minus"><i class="fas fa-minus"></i></button>
+                                    <span class="qty-value">3</span>
+                                    <button class="qty-btn qty-plus"><i class="fas fa-plus"></i></button>
+                                </div>
                             </div>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="cart-item-card">
+                    <!-- Cart Item 4 -->
+                    <div class="cart-item-card">
+                        <div class="cart-item-badge">8% OFF</div>
                         <div class="cart-item-image">
-                            <span>8% OFF</span>
                             <img src="assets/images/product4.svg" alt="Fluffy Octopus">
                         </div>
-                        <div class="cart-item-body">
-                            <small>Soft Toys &amp; Stationery</small>
-                            <h3>Fluffy Octopus</h3>
-                            <p class="cart-item-price">Rs. 1,220 <del>Rs. 1,350</del></p>
-                        </div>
-                        <div class="cart-item-actions">
-                            <button class="cart-delete-btn"><i class="far fa-trash-alt"></i></button>
-                            <div class="cart-qty">
-                                <button>-</button>
-                                <span>2</span>
-                                <button>+</button>
+                        <div class="cart-item-info">
+                            <div class="cart-item-header">
+                                <div>
+                                    <span class="cart-item-category">Soft Toys & Stationery</span>
+                                    <h3 class="cart-item-name">Fluffy Octopus</h3>
+                                </div>
+                                <button class="cart-item-remove" title="Remove item"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                            <div class="cart-item-bottom">
+                                <div class="cart-item-price">
+                                    <span class="price-current">Rs. 1,220</span>
+                                    <span class="price-original">Rs. 1,350</span>
+                                </div>
+                                <div class="cart-qty-control">
+                                    <button class="qty-btn qty-minus"><i class="fas fa-minus"></i></button>
+                                    <span class="qty-value">2</span>
+                                    <button class="qty-btn qty-plus"><i class="fas fa-plus"></i></button>
+                                </div>
                             </div>
                         </div>
-                    </article>
-                </section>
-
-                <aside class="col-lg-4">
-                    <div class="order-summary-card">
-                        <h2>Order Summary</h2>
-                        <div class="summary-row"><span>Subtotal</span><strong>Rs. 129,000</strong></div>
-                        <div class="summary-row saving"><span>Total Saving</span><strong>Rs. 22,000</strong></div>
-                        <hr>
-                        <div class="summary-total"><span>Total</span><strong>Rs. 117,000</strong></div>
-
-                        <button class="btn-checkout">Proceed to Checkout <i class="fas fa-arrow-right"></i></button>
-                        <button class="btn-continue">Continue Shopping</button>
-
-                        <ul class="cart-benefits">
-                            <li><i class="far fa-check-circle"></i> Secure Checkout</li>
-                            <li><i class="far fa-credit-card"></i> Multiple Payment Options</li>
-                            <li><i class="fas fa-box"></i> Cash on Delivery Available</li>
-                        </ul>
                     </div>
-                </aside>
+                </div>
+
+                <!-- Order Summary Column -->
+                <div class="col-lg-4">
+                    <div class="cart-summary-card">
+                        <h2 class="cart-summary-title">Order Summary</h2>
+
+                        <div class="cart-summary-row">
+                            <span>Subtotal</span>
+                            <strong>Rs. 129,000</strong>
+                        </div>
+                        <div class="cart-summary-row saving">
+                            <span>Total Saving</span>
+                            <strong>Rs. 22,000</strong>
+                        </div>
+
+                        <hr class="cart-summary-divider">
+
+                        <div class="cart-summary-total">
+                            <span>Total</span>
+                            <strong>Rs. 117,000</strong>
+                        </div>
+
+                        <a href="checkout.php" class="btn-cart-checkout">
+                            Proceed to Checkout <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="product-list.php" class="btn-cart-continue">Continue Shopping</a>
+
+                        <div class="cart-trust-badges">
+                            <div class="trust-badge-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Secure Checkout</span>
+                            </div>
+                            <div class="trust-badge-item">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Multiple Payment Options</span>
+                            </div>
+                            <div class="trust-badge-item">
+                                <i class="fas fa-truck"></i>
+                                <span>Cash on Delivery Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
