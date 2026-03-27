@@ -78,6 +78,35 @@ $(document).ready(function () {
             }
         ]
     });
-});
 
+    // Product Detail: thumbnail switch + zoom on hover
+    const $mainImage = $('#productMainImage');
+    const $mainImageBox = $('#productMainImageBox');
+    const $thumbButtons = $('.product-thumbs button[data-image]');
+
+    if ($mainImage.length && $mainImageBox.length && $thumbButtons.length) {
+        $thumbButtons.on('click', function () {
+            const newImage = $(this).attr('data-image');
+            if (!newImage) return;
+
+            $mainImage.attr('src', newImage);
+            $thumbButtons.removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $mainImageBox.on('mousemove', function (e) {
+            const rect = this.getBoundingClientRect();
+            const xPercent = ((e.clientX - rect.left) / rect.width) * 100;
+            const yPercent = ((e.clientY - rect.top) / rect.height) * 100;
+
+            $mainImageBox.addClass('zoom-active');
+            $mainImage.css('transform-origin', `${xPercent}% ${yPercent}%`);
+        });
+
+        $mainImageBox.on('mouseleave', function () {
+            $mainImageBox.removeClass('zoom-active');
+            $mainImage.css('transform-origin', 'center center');
+        });
+    }
+});
 

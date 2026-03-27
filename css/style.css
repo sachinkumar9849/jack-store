@@ -524,6 +524,16 @@ h6 {
     line-height: 1.3;
 }
 
+.product-title-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-title-link:hover {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
 .variant-selection {
     display: flex;
     gap: 8px;
@@ -1120,15 +1130,19 @@ img {
 .register-page {
     min-height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #d8e8f4 0%, #c8d8e6 100%);
+    background-color: #647780;
 }
 
 .register-wrapper {
-    min-height: 100vh;
-    padding: 40px 20px;
+    /* min-height: 100vh; */
+    padding: 72px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
+    background: url(../assets/images/rectangleBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .register-card {
@@ -1173,17 +1187,21 @@ img {
 }
 
 .register-title {
-    font-size: 2.1rem;
-    line-height: 1.2;
-    color: #151b31;
+    color: #171A2E;
     margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 1%;
 }
 
 .register-form label {
-    color: #5f6f89;
-    font-size: 1.1rem;
-    font-weight: 700;
+    color: #5D6B98;
     margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
 }
 
 .register-form .form-control {
@@ -1191,10 +1209,13 @@ img {
     border-radius: 14px;
     border: 1px solid #e1e6ef;
     background: #fbfcff;
-    color: #2f3f5a;
+    color: #7D89B0;
     padding: 0 18px;
-    font-size: 0.96rem;
     box-shadow: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
 }
 
 .register-form .form-control::placeholder {
@@ -1251,13 +1272,14 @@ img {
 .register-login-text {
     margin: 20px 0 0;
     text-align: center;
-    color: #7d8798;
-    font-size: 1.05rem;
+    color: #5D6B98;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .register-login-text a {
-    color: #0196da;
-    font-weight: 700;
+    color: #0196DA;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -1306,9 +1328,9 @@ img {
     margin-top: 10px;
     display: block;
     text-align: right;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #0196da;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0196DA;
     text-decoration: none;
 }
 
@@ -1680,6 +1702,7 @@ img {
     overflow: hidden;
     border: 1px solid #dce4ef;
     background: #fff;
+    cursor: zoom-in;
 }
 
 .product-main-image img {
@@ -1687,6 +1710,13 @@ img {
     height: 460px;
     object-fit: cover;
     display: block;
+    transition: transform 0.28s ease;
+    transform-origin: center center;
+    will-change: transform;
+}
+
+.product-main-image.zoom-active img {
+    transform: scale(1.7);
 }
 
 .product-thumbs {
@@ -1699,14 +1729,16 @@ img {
     width: 96px;
     height: 96px;
     border-radius: 10px;
-    border: 2px solid transparent;
+    border: 2px solid #d7e1ec;
     padding: 0;
     overflow: hidden;
     background: #fff;
+    transition: all 0.2s ease;
 }
 
 .product-thumbs button.active {
     border-color: #47aae0;
+    box-shadow: 0 6px 16px rgba(61, 158, 214, 0.2);
 }
 
 .product-thumbs img {

@@ -25,10 +25,10 @@
                 <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 pl-lg-5">
                     <h5 class="footer-title mb-4">Quick Links</h5>
                     <ul class="footer-links list-unstyled">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">FAQs</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about.php">About Us</a></li>
+                        <li><a href="blogs.php">Blogs</a></li>
+                        <li><a href="product-list.php">Shop</a></li>
                     </ul>
                 </div>
 
@@ -83,8 +83,8 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 mb-3 mb-md-0 text-center text-md-left">
-                        <a href="#" class="mr-4">Privacy Policy</a>
-                        <a href="#">Terms and Conditions</a>
+                        <a href="about.php" class="mr-4">Privacy Policy</a>
+                        <a href="about.php">Terms and Conditions</a>
                     </div>
                     <div class="col-md-6 text-center text-md-right">
                         <span>&copy; 2026 Jack Department Store. All rights reserved.</span>
@@ -107,4 +107,3 @@
 </body>
 
 </html>
-

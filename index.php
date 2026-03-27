@@ -1,76 +1,5 @@
 <?php include 'include/header.php'?>
 
-
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container position-relative">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.svg" alt="Jack Store">
-
-            </a>
-
-            <div class="nav-item-shop ml-4">
-                <button class="btn btn-shop">
-                    Shop
-                    <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i>
-                </button>
-                <!-- Mega Menu -->
-                <div class="mega-menu">
-                    <div class="container">
-                        <div class="row w-100">
-                            <div class="col-md-9 menu-section">
-                                <h6>Shop by Category</h6>
-                                <ul class="menu-links">
-                                    <li><a href="#">Skincare & Beauty</a></li>
-                                    <li><a href="#">Jewelry & Accessories</a></li>
-                                    <li><a href="#">Bath Essentials</a></li>
-                                    <li><a href="#">Home & Kitchen</a></li>
-                                    <li><a href="#">Fine Ceramics</a></li>
-                                    <li><a href="#">Fine Glass</a></li>
-                                    <li><a href="#">Soft Toys & Stationery</a></li>
-                                    <li><a href="#">Kids Section</a></li>
-                                    <li><a href="#">Home Decors</a></li>
-                                    <li><a href="#">Electronic Gadgets</a></li>
-                                    <li><a href="#">Bags</a></li>
-                                    <li><a href="#">Nightwear & Innerwear</a></li>
-                                    <li><a href="#">Footwears</a></li>
-                                    <li><a href="#">Hygiene and Wellness</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 menu-section trending">
-                                <h6>Trending Now</h6>
-                                <ul class="menu-links" style="grid-template-columns: 1fr;">
-                                    <li><a href="#">New Arrivals</a></li>
-                                    <li><a href="#">Best Sellers</a></li>
-                                    <li><a href="#">Top Rated</a></li>
-                                    <li><a href="#">Customer Favorites</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Search for products, brands and more...">
-                <i class="fas fa-search search-icon"></i>
-            </div>
-
-            <div class="d-flex align-items-center">
-                <a href="login.php" class="nav-right-item">
-                    <i class="far fa-user" style="font-size: 1.1rem;"></i>
-                    Account
-                </a>
-                <a href="#" class="btn-cart">
-                    <i class="fas fa-shopping-cart"></i>
-                    Cart
-                    <span class="cart-badge">3</span>
-                </a>
-            </div>
-        </div>
-    </nav>
-
     <!-- Hero Slider -->
     <section class="hero-container">
         <div class="container">
@@ -164,7 +93,7 @@
                     <h2 class="font-weight-bold mb-1">Best Selling Products</h2>
                     <p class="subTitle">Top picks loved by our customers</p>
                 </div>
-                <a href="#" class="explore-all-link">Explore all <i class="fas fa-arrow-right ml-1"></i></a>
+                <a href="product-list.php" class="explore-all-link">Explore all <i class="fas fa-arrow-right ml-1"></i></a>
             </div>
 
             <div class="row">
@@ -177,7 +106,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Fine ceramics</span>
-                            <h5 class="product-title">Native Flower Vase</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Native Flower Vase</a></h5>
                             <div class="variant-selection">
                                 <button class="variant-btn active">500ml</button>
                                 <button class="variant-btn">1L</button>
@@ -202,7 +131,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Fine glass</span>
-                            <h5 class="product-title">Gorilla Wine Glass</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Gorilla Wine Glass</a></h5>
                             <div class="variant-selection">
                                 <button class="variant-btn active">250ml</button>
                                 <button class="variant-btn">500ml</button>
@@ -228,7 +157,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Skincare & Beauty</span>
-                            <h5 class="product-title">Orange Skinny Wash</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Orange Skinny Wash</a></h5>
                             <p class="text-muted small mb-3">Refreshing your skin with the power of vitamin C</p>
                             <div class="product-rating">
                                 <i class="fas fa-star"></i>
@@ -250,7 +179,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Soft Toys & Stationery</span>
-                            <h5 class="product-title">Fluffy Octopus</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Fluffy Octopus</a></h5>
                             <p class="text-muted small mb-3">An friend in need to assist you in your toy world</p>
                             <div class="product-rating">
                                 <i class="fas fa-star"></i>
@@ -272,7 +201,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Home & Kitchen</span>
-                            <h5 class="product-title">Knife and Fork Set</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Knife and Fork Set</a></h5>
                             <p class="text-muted small mb-3">5 set of antique knife and forks, perfect for the best
                                 culinary practice</p>
                             <div class="product-rating">
@@ -295,7 +224,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Jewelry & Accessories</span>
-                            <h5 class="product-title">Bridal Bangles</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Bridal Bangles</a></h5>
                             <p class="text-muted small mb-3">Gold plated bangles crafted to fit the perfect bride makeup
                             </p>
                             <div class="product-rating">
@@ -318,7 +247,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Fine Ceramics</span>
-                            <h5 class="product-title">Floral Cup</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Floral Cup</a></h5>
                             <div class="variant-selection">
                                 <button class="variant-btn active">100ml</button>
                                 <button class="variant-btn">200ml</button>
@@ -344,7 +273,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Home & Kitchen</span>
-                            <h5 class="product-title">Orange Water Heating...</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Orange Water Heating...</a></h5>
                             <p class="text-muted small mb-3">Water heating at the tip of your fingertip and within few
                                 seconds</p>
                             <div class="product-rating">
@@ -368,7 +297,7 @@
                     <h2 class="font-weight-bold mb-1">Recommended For You</h2>
 
                 </div>
-                <a href="#" class="explore-all-link">Explore all <i class="fas fa-arrow-right ml-1"></i></a>
+                <a href="product-list.php" class="explore-all-link">Explore all <i class="fas fa-arrow-right ml-1"></i></a>
             </div>
 
             <div class="row">
@@ -381,7 +310,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Fine ceramics</span>
-                            <h5 class="product-title">Native Flower Vase</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Native Flower Vase</a></h5>
                             <div class="variant-selection">
                                 <button class="variant-btn active">500ml</button>
                                 <button class="variant-btn">1L</button>
@@ -406,7 +335,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Fine glass</span>
-                            <h5 class="product-title">Gorilla Wine Glass</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Gorilla Wine Glass</a></h5>
                             <div class="variant-selection">
                                 <button class="variant-btn active">250ml</button>
                                 <button class="variant-btn">500ml</button>
@@ -432,7 +361,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Skincare & Beauty</span>
-                            <h5 class="product-title">Orange Skinny Wash</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Orange Skinny Wash</a></h5>
                             <p class="text-muted small mb-3">Refreshing your skin with the power of vitamin C</p>
                             <div class="product-rating">
                                 <i class="fas fa-star"></i>
@@ -454,7 +383,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Soft Toys & Stationery</span>
-                            <h5 class="product-title">Fluffy Octopus</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Fluffy Octopus</a></h5>
                             <p class="text-muted small mb-3">An friend in need to assist you in your toy world</p>
                             <div class="product-rating">
                                 <i class="fas fa-star"></i>
@@ -476,7 +405,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Home & Kitchen</span>
-                            <h5 class="product-title">Knife and Fork Set</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Knife and Fork Set</a></h5>
                             <p class="text-muted small mb-3">5 set of antique knife and forks, perfect for the best
                                 culinary practice</p>
                             <div class="product-rating">
@@ -499,7 +428,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Jewelry & Accessories</span>
-                            <h5 class="product-title">Bridal Bangles</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Bridal Bangles</a></h5>
                             <p class="text-muted small mb-3">Gold plated bangles crafted to fit the perfect bride makeup
                             </p>
                             <div class="product-rating">
@@ -522,7 +451,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Fine Ceramics</span>
-                            <h5 class="product-title">Floral Cup</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Floral Cup</a></h5>
                             <div class="variant-selection">
                                 <button class="variant-btn active">100ml</button>
                                 <button class="variant-btn">200ml</button>
@@ -548,7 +477,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-cat">Home & Kitchen</span>
-                            <h5 class="product-title">Orange Water Heating...</h5>
+                            <h5 class="product-title"><a href="product-detail.php" class="product-title-link">Orange Water Heating...</a></h5>
                             <p class="text-muted small mb-3">Water heating at the tip of your fingertip and within few
                                 seconds</p>
                             <div class="product-rating">

@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout | Jack Store</title>
-    <link rel="icon" href="assets/images/fav.png" type="image/png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body class="checkout-page">
+<?php
+$bodyClass = 'checkout-page';
+include 'include/header.php';
+?>
     <main class="checkout-wrap">
         <div class="container checkout-container">
             <a href="shopping-cart.php" class="checkout-back-link"><i class="fas fa-arrow-left"></i> Go Back</a>
@@ -145,6 +135,4 @@
             </div>
         </div>
     </main>
-</body>
-
-</html>
+<?php include 'include/footer.php'?>

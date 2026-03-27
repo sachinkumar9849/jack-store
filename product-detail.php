@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Native Flower Vase | Jack Store</title>
-    <link rel="icon" href="assets/images/fav.png" type="image/png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body class="product-detail-page">
+<?php
+$bodyClass = 'product-detail-page';
+include 'include/header.php';
+?>
     <main class="product-detail-wrap">
         <div class="container product-detail-container">
             <nav class="product-breadcrumb">
@@ -25,14 +15,18 @@
             <section class="row product-main-row">
                 <div class="col-lg-6">
                     <div class="product-gallery">
-                        <div class="product-main-image">
-                            <img src="assets/images/product1.svg" alt="Native Flower Vase">
+                        <div class="product-main-image" id="productMainImageBox">
+                            <img src="assets/images/product1.svg" alt="Native Flower Vase" id="productMainImage">
                         </div>
                         <div class="product-thumbs">
-                            <button class="active"><img src="assets/images/product1.svg" alt="Thumbnail 1"></button>
-                            <button><img src="assets/images/product1.svg" alt="Thumbnail 2"></button>
-                            <button><img src="assets/images/product1.svg" alt="Thumbnail 3"></button>
-                            <button><img src="assets/images/product1.svg" alt="Thumbnail 4"></button>
+                            <button class="active" data-image="assets/images/product1.svg" type="button"
+                                aria-label="Show image 1"><img src="assets/images/product1.svg" alt="Thumbnail 1"></button>
+                            <button data-image="assets/images/product2.svg" type="button" aria-label="Show image 2"><img
+                                    src="assets/images/product2.svg" alt="Thumbnail 2"></button>
+                            <button data-image="assets/images/product3.svg" type="button" aria-label="Show image 3"><img
+                                    src="assets/images/product3.svg" alt="Thumbnail 3"></button>
+                            <button data-image="assets/images/product4.svg" type="button" aria-label="Show image 4"><img
+                                    src="assets/images/product4.svg" alt="Thumbnail 4"></button>
                         </div>
                     </div>
                 </div>
@@ -197,6 +191,4 @@
             </section>
         </div>
     </main>
-</body>
-
-</html>
+<?php include 'include/footer.php'?>
